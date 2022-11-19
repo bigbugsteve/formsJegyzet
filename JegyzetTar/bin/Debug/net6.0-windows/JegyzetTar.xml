@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<dsJegyzetTar xmlns="http://tempuri.org/dsJegyzetTar.xsd">
+  <dtJegyzet>
+    <Id>1</Id>
+    <Cím>C# alapok</Cím>
+    <URL>https://</URL>
+  </dtJegyzet>
+  <dtJegyzet>
+    <Id>2</Id>
+    <Cím>C# haladó</Cím>
+    <URL>https://</URL>
+  </dtJegyzet>
+  <dtSzerző>
+    <Id>1</Id>
+    <Név>Gipsz Jakab</Név>
+    <email>gipsz@mail.hu</email>
+  </dtSzerző>
+  <dtSzerző>
+    <Id>2</Id>
+    <Név>Jegyzetszerző Jolán</Név>
+    <email>jj@mail.hu</email>
+  </dtSzerző>
+  <dtJSz>
+    <IdJegyzet>1</IdJegyzet>
+    <IdSzerző>1</IdSzerző>
+  </dtJSz>
+  <dtJSz>
+    <IdJegyzet>1</IdJegyzet>
+    <IdSzerző>2</IdSzerző>
+  </dtJSz>
+  <dtJSz>
+    <IdJegyzet>2</IdJegyzet>
+    <IdSzerző>2</IdSzerző>
+  </dtJSz>
+</dsJegyzetTar>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsJegyzetTar" targetNamespace="http://tempuri.org/dsJegyzetTar.xsd" xmlns:mstns="http://tempuri.org/dsJegyzetTar.xsd" xmlns="http://tempuri.org/dsJegyzetTar.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsJegyzetTar" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="dsJegyzetTar" msprop:Generator_DataSetName="dsJegyzetTar">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtJegyzet" msprop:Generator_RowEvHandlerName="dtJegyzetRowChangeEventHandler" msprop:Generator_RowDeletedName="dtJegyzetRowDeleted" msprop:Generator_RowDeletingName="dtJegyzetRowDeleting" msprop:Generator_RowEvArgName="dtJegyzetRowChangeEvent" msprop:Generator_TablePropName="dtJegyzet" msprop:Generator_RowChangedName="dtJegyzetRowChanged" msprop:Generator_RowChangingName="dtJegyzetRowChanging" msprop:Generator_TableClassName="dtJegyzetDataTable" msprop:Generator_RowClassName="dtJegyzetRow" msprop:Generator_TableVarName="tabledtJegyzet" msprop:Generator_UserTableName="dtJegyzet">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_UserColumnName="Id" type="xs:short" />
+              <xs:element name="Cím" msprop:Generator_ColumnPropNameInRow="Cím" msprop:Generator_ColumnPropNameInTable="CímColumn" msprop:Generator_ColumnVarNameInTable="columnCím" msprop:Generator_UserColumnName="Cím" type="xs:string" minOccurs="0" />
+              <xs:element name="URL" msprop:Generator_ColumnPropNameInRow="URL" msprop:Generator_ColumnPropNameInTable="URLColumn" msprop:Generator_ColumnVarNameInTable="columnURL" msprop:Generator_UserColumnName="URL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtSzerző" msprop:Generator_RowEvHandlerName="dtSzerzőRowChangeEventHandler" msprop:Generator_RowDeletedName="dtSzerzőRowDeleted" msprop:Generator_RowDeletingName="dtSzerzőRowDeleting" msprop:Generator_RowEvArgName="dtSzerzőRowChangeEvent" msprop:Generator_TablePropName="dtSzerző" msprop:Generator_RowChangedName="dtSzerzőRowChanged" msprop:Generator_RowChangingName="dtSzerzőRowChanging" msprop:Generator_TableClassName="dtSzerzőDataTable" msprop:Generator_RowClassName="dtSzerzőRow" msprop:Generator_TableVarName="tabledtSzerző" msprop:Generator_UserTableName="dtSzerző">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_UserColumnName="Id" type="xs:short" />
+              <xs:element name="Név" msprop:Generator_ColumnPropNameInRow="Név" msprop:Generator_ColumnPropNameInTable="NévColumn" msprop:Generator_ColumnVarNameInTable="columnNév" msprop:Generator_UserColumnName="Név" type="xs:string" minOccurs="0" />
+              <xs:element name="email" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnPropNameInTable="emailColumn" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_UserColumnName="email" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtJSz" msprop:Generator_RowEvHandlerName="dtJSzRowChangeEventHandler" msprop:Generator_RowDeletedName="dtJSzRowDeleted" msprop:Generator_RowDeletingName="dtJSzRowDeleting" msprop:Generator_RowEvArgName="dtJSzRowChangeEvent" msprop:Generator_TablePropName="dtJSz" msprop:Generator_RowChangedName="dtJSzRowChanged" msprop:Generator_RowChangingName="dtJSzRowChanging" msprop:Generator_TableClassName="dtJSzDataTable" msprop:Generator_RowClassName="dtJSzRow" msprop:Generator_TableVarName="tabledtJSz" msprop:Generator_UserTableName="dtJSz">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdJegyzet" msprop:Generator_ColumnPropNameInRow="IdJegyzet" msprop:Generator_ColumnPropNameInTable="IdJegyzetColumn" msprop:Generator_ColumnVarNameInTable="columnIdJegyzet" msprop:Generator_UserColumnName="IdJegyzet" type="xs:short" minOccurs="0" />
+              <xs:element name="IdSzerző" msprop:Generator_ColumnPropNameInRow="IdSzerző" msprop:Generator_ColumnPropNameInTable="IdSzerzőColumn" msprop:Generator_ColumnVarNameInTable="columnIdSzerző" msprop:Generator_UserColumnName="IdSzerző" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtJegyzet" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="dtSzerző_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtSzerző" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:keyref name="FK_dtSzerző_dtJSz" refer="dtSzerző_Constraint1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:dtJSz" />
+      <xs:field xpath="mstns:IdSzerző" />
+    </xs:keyref>
+    <xs:keyref name="FK_dtJegyzet_dtJSz" refer="Constraint1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:dtJSz" />
+      <xs:field xpath="mstns:IdJegyzet" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
