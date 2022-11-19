@@ -40,5 +40,19 @@ namespace JegyzetTar
 			rekord.Cím = tbCím.Text;
 			rekord.URL = tbUrl.Text;
 		}
+
+		private void btÚj_Click(object sender, EventArgs e)
+		{
+			var sor = (cbJegyzet.Items[cbJegyzet.Items.Count - 1] as DataRowView)?.Row as dsJegyzetTar.dtJegyzetRow;
+			short sorszám = (short)(sor.Id + 1);
+
+			dsJegyzetTar.dtJegyzet.AdddtJegyzetRow(sorszám, "Újcím", "ÚjUrl");
+			cbJegyzet.SelectedIndex = cbJegyzet.Items.Count - 1;
+		}
+
+		private void btMégse_Click(object sender, EventArgs e)
+		{
+			Visible = false;
+		}
 	}
 }

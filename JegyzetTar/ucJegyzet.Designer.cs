@@ -32,6 +32,8 @@
             this.tbCím = new System.Windows.Forms.TextBox();
             this.tbUrl = new System.Windows.Forms.TextBox();
             this.btMent = new System.Windows.Forms.Button();
+            this.btÚj = new System.Windows.Forms.Button();
+            this.btMégse = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cbJegyzet
@@ -67,10 +69,32 @@
             this.btMent.UseVisualStyleBackColor = true;
             this.btMent.Click += new System.EventHandler(this.btMent_Click);
             // 
+            // btÚj
+            // 
+            this.btÚj.Location = new System.Drawing.Point(318, 180);
+            this.btÚj.Name = "btÚj";
+            this.btÚj.Size = new System.Drawing.Size(75, 23);
+            this.btÚj.TabIndex = 4;
+            this.btÚj.Text = "Új";
+            this.btÚj.UseVisualStyleBackColor = true;
+            this.btÚj.Click += new System.EventHandler(this.btÚj_Click);
+            // 
+            // btMégse
+            // 
+            this.btMégse.Location = new System.Drawing.Point(174, 154);
+            this.btMégse.Name = "btMégse";
+            this.btMégse.Size = new System.Drawing.Size(75, 23);
+            this.btMégse.TabIndex = 5;
+            this.btMégse.Text = "Mégse";
+            this.btMégse.UseVisualStyleBackColor = true;
+            this.btMégse.Click += new System.EventHandler(this.btMégse_Click);
+            // 
             // ucJegyzet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btMégse);
+            this.Controls.Add(this.btÚj);
             this.Controls.Add(this.btMent);
             this.Controls.Add(this.tbUrl);
             this.Controls.Add(this.tbCím);
@@ -89,5 +113,7 @@
 		private TextBox tbCím;
 		private TextBox tbUrl;
 		private Button btMent;
-	}
+        private Button btÚj;
+        private Button btMégse;
+    }
 }
